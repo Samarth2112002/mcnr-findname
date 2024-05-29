@@ -45,7 +45,7 @@ export async function _f1(name, auth){
                     console.log(`429 error encountered, waiting ${retry_after} seconds before sending another request`)
                 }
                 else{
-                    label.innerHTML = "Request status: 200 (Success)"
+                    label.innerHTML = "Request status: 200 (Success) [please wait nigger, processing, will be informed when done]"
                     for (let i = 0; i < 25; ++i) {
                         const author_name = response["messages"][i][0]["author"]["username"]
                         if (author_name != "MCNR") {
