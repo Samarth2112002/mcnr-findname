@@ -14,6 +14,20 @@
         <label for="findname">Enter which user's previous name you want to know</label>
         <input type="text" id="name">
         <br>
+        Advanced search?
+        <input type="checkbox" id="advanced-search-toggle">
+        <br>
+        <div id="advanced-search-hidden" style="display:none">
+            Enter date: YYYY/MM/DD
+            <input type="text" id="yy">
+            <input type="text" id="mm">
+            <input type="text" id="dd">
+            <br>
+            Enter time: 
+            <input type="text" id="h">
+            <input type="text" id="m">
+            <input type="text" id='s'>
+        </div>
         <button id="submit">Submit</button>
         <br>
         <label for="error" id="errormsg"></label>
