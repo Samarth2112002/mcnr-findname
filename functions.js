@@ -24,7 +24,7 @@ export function _f3(){
     console.log(isAdvanced['advance'])
 }
 
-export function _d1(parsedDate, adv = false){ 
+function _d1(parsedDate, adv = false){ 
     const DISCORD_EPOCH = 1420070400000
     if (!adv) {
         const UNIXTIME = parseInt(new Date(parsedDate).valueOf()/1000)*1000
@@ -40,7 +40,7 @@ export function _d1(parsedDate, adv = false){
     }
 }
 
-export async function _f1(name, auth){
+async function _f1(name, auth){
     const str_left = `${name} left`
     const label = document.getElementById('errormsg')
     let offset = 0, api_error = false, retry_after, entered_date, temp
@@ -155,7 +155,7 @@ export async function _f1(name, auth){
     }
 }
 
-export async function _f2(auth, max_id, playerid){
+async function _f2(auth, max_id, playerid){
     let url, msg, joined_msg, author_name, temp, temp_id, left_msg_id
     const str_search = `(${playerid}) joined`
     let found = false, final_name, api_error = false, retry_after
